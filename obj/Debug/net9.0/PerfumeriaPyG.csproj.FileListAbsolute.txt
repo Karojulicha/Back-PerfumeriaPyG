@@ -139,3 +139,4 @@ C:\Users\karol\OneDrive\Escritorio\Sena tecnologo\ecommerce-pyg-back\PerfumeriaP
 C:\Users\karol\OneDrive\Escritorio\Sena tecnologo\ecommerce-pyg-back\PerfumeriaPyG\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\karol\OneDrive\Escritorio\Sena tecnologo\ecommerce-pyg-back\PerfumeriaPyG\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\karol\OneDrive\Escritorio\Sena tecnologo\ecommerce-pyg-back\PerfumeriaPyG\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\karol\OneDrive\Escritorio\Sena tecnologo\ecommerce-pyg-back\PerfumeriaPyG\bin\Debug\net9.0\.gitignore.json
