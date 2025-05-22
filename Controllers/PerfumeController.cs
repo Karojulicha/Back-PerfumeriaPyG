@@ -7,7 +7,7 @@ namespace Perfumeria.Controllers
     [ApiController]
     [Route("api/[controller]")]
 
-    public class PerfumeController : ControllerBase 
+    public class PerfumeController : ControllerBase
     {
         private readonly AppDbContext _context;
 
@@ -21,7 +21,8 @@ namespace Perfumeria.Controllers
         public async Task<IActionResult> GetAllPerfume()
         {
             List<ResponsePerfumeDto> perfumes = await _context.Perfumes.Select(
-                perfume => new ResponsePerfumeDto {
+                perfume => new ResponsePerfumeDto
+                {
                     Name = perfume.Name,
                     Brand = perfume.Brand,
                     Price = perfume.Price,
@@ -48,8 +49,8 @@ namespace Perfumeria.Controllers
         {
             var perfumesByBrand = await _context.Perfumes.Where(perfume => perfume.Brand == brand).ToListAsync();
 
-            if (perfumesByBrand == null || perfumesByBrand.Count == 0) 
-            return NotFound();
+            if (perfumesByBrand == null || perfumesByBrand.Count == 0)
+                return NotFound();
 
             return Ok(perfumesByBrand);
         }
@@ -81,6 +82,7 @@ namespace Perfumeria.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
+
 
     }
 

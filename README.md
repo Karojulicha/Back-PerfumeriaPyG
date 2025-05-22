@@ -40,7 +40,10 @@ con dotnet user-secrets list puede mirar tu configuracion
 
 ### 3. Cuando tiene configurado claves pudes aplicar las migraciones y crear la base de datos atravez de comando [dotnet ef database update]
 
-### 4. Ejecuta el servidor dotnet run y ya puedes ver la ruta en la que se esta ejecutando https://localhost: ...
+### 4. Acceso a la BD MySQL: Asegurate de tener acceso a la base de datos MySQL con las     credecionales correctas     
+**Nota:** Solicita al propietario del servidor MySQL que habilite conexiones remotas y te confirme la IP, puerto y credenciales.
+
+### 5. Ejecuta el servidor dotnet run y ya puedes ver la ruta en la que se esta ejecutando https://localhost: ...
 
 ### 5. Ejecuta el Front-end
 [Repositorio del Front-end](https://github.com/Karojulicha/Front-PerfumeriaPyG)

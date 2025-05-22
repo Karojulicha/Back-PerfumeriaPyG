@@ -9,6 +9,16 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
+// Add CORS
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontEnd", policy =>
+
+    policy.WithOrigins("http://localhost:5173").AllowAnyMethod().AllowAnyHeader()
+        );
+});
+
 
 
 // Add services to the container.
@@ -17,6 +27,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddDbContext<AppDbContext>(
     options => options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
 );
+
 builder.Services.AddControllers();
 builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
 
@@ -48,10 +59,11 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.UseHttpsRedirection();
-app.MapControllers();
-app.UseAuthentication();
+app.UseHttpsRedirection(); 
+app.UseCors("AllowFrontEnd"); // usar cors
+app.UseAuthentication();    // usar auth
 app.UseAuthorization();
+app.MapControllers();  // usar constrollers
 app.Run();
 
 

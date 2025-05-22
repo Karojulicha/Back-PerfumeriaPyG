@@ -33,6 +33,11 @@ namespace Perfumeria.Controllers
         public IActionResult Login([FromBody] LoginDto request)
         {
 
+            Console.WriteLine("=====================================");
+            Console.WriteLine("🔴 ¡PETICIÓN RECIBIDA EN BACKEND! 🔴");
+            Console.WriteLine("=====================================");
+
+
             if (string.IsNullOrEmpty(_keyJwt))
             {
                 return Unauthorized("Unauthorized...");
