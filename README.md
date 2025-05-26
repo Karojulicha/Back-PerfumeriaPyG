@@ -35,7 +35,7 @@ Este es un proyecto de e-commerce enfocado en la venta de perfumes. Cuenta con u
 - dotnet user-secrets set "Jwt:Audience" "PerfumeriaPyG_Frontend"
 
 
- **Nota:** Reemplaza TU_CONTRASEÑA con la contraseña de tu base de datos Y REMPLAZAR_32_CARACTERES_KEY_KWT y con una clave segura para firmar los tokens JWT.
+ **Nota:** Reemplaza TU_CONTRASEÑA, Root y REMPLAZAR_32_CARACTERES_KEY_KWT con una clave segura para firmar los tokens JWT.
 con dotnet user-secrets list puede mirar tu configuracion
 
 ### 3. Cuando tiene configurado claves pudes aplicar las migraciones y crear la base de datos atravez de comando [dotnet ef database update]

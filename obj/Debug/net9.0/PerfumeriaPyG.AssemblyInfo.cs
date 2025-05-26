@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PerfumeriaPyG")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a68a0f799d75acb5b18a4e62d56a42bf6dd0c743")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1f763072c24a8057f7f44e123a22248102dbd24")]
 [assembly: System.Reflection.AssemblyProductAttribute("PerfumeriaPyG")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PerfumeriaPyG")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
